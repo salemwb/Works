@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>معرض أعمالي | سالم وهيب سالم بامخرم</title>
+  <meta name="description" content="معرض أعمال سالم وهيب سالم بامخرم في تطوير المواقع وتصميم الواجهات والجرافيك." />
+  <!-- خط عربي جميل ومريح للعين -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- أيقونات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+
+  <!-- شريط علوي -->
+  <div class="topbar">
+    <p>تطوير مواقع وتصميم رقمي <span class="dot"></span> المدينة المنورة</p>
+  </div>
+
+  <!-- الهيدر -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">سالم<span>بامخرم</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">الرئيسية</a></li>
+        <li><a href="#about">عني</a></li>
+        <li><a href="#cv">السيرة الذاتية</a></li>
+        <li><a href="#skills">مهاراتي</a></li>
+        <li><a href="#projects">أعمالي</a></li>
+        <li><a href="#gallery">معرض الصور</a></li>
+        <li><a href="#services">خدماتي التقنية</a></li>
+        <li><a href="#contact">تواصل</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeBtn" class="icon-btn" title="الوضع الليلي / النهاري">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">تواصل معي</a>
+        <button id="menuBtn" class="icon-btn menu-btn" title="القائمة">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- الرئيسية / البطل -->
+  <section id="home" class="hero container">
+    <div class="hero-text">
+      <span class="badge">تطوير مواقع وتصميم رقمي</span>
+      <h1>مرحباً، أنا <span class="highlight">سالم وهيب سالم بامخرم</span><br /><span id="typing"></span><span class="cursor">|</span></h1>
+      <p class="subtitle">
+        مهتم بتطوير المواقع وتصميم الواجهات والجرافيك. أعمل على بناء تجارب رقمية واضحة ومتجاوبة، وأعرض هنا نماذج من مواقعي وتصاميمي.
+      </p>
+
+      <!-- زر الذهاب إلى السيرة الذاتية -->
+      <div class="hero-btns">
+        <a href="https://cvsalem.salembamakhram.workers.dev/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">اذهب إلى السيرة الذاتية</a>
+        <a href="#projects" class="btn btn-outline">استعرض أعمالي</a>
+      </div>
+
+      <div class="hero-stats">
+        <div><strong>2</strong><span>موقع إلكتروني</span></div>
+        <div><strong>6</strong><span>تصاميم معروضة</span></div>
+        <div><strong>2025</strong><span>سنة التخرج</span></div>
+      </div>
+
+      <div class="socials">
+        <a href="mailto:saleemw2007@gmail.com" title="البريد الإلكتروني"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://wa.me/966508935672" target="_blank" rel="noopener noreferrer" title="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-img">
+      <!-- بطاقة الملف الشخصي مثل الصورة المرجعية -->
+      <div class="profile-card">
+        <div class="profile-img-wrapper">
+          <img class="profile-img" src="profile-mark.svg" alt="شعار سالم">
+          <div class="profile-badge">جاهز للعمل</div>
+        </div>
+        <h3>سالم وهيب سالم بامخرم</h3>
+        <p>تطوير مواقع | تصميم جرافيك</p>
+        <div class="profile-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <a href="https://cvsalem.salembamakhram.workers.dev/" target="_blank" rel="noopener noreferrer" class="btn btn-dark btn-block">اذهب إلى السيرة الذاتية</a>
+      </div>
+
+      <div class="float-card f1"><i class="fa-solid fa-code"></i> تطوير الواجهات</div>
+      <div class="float-card f2"><i class="fa-solid fa-palette"></i> تصميم جرافيك</div>
+    </div>
+  </section>
+
+  <!-- عني -->
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <div class="about-img">
+        <img class="about-illustration" src="about-service.svg" alt="رسم توضيحي لتطوير وتصميم المواقع">
+        <div class="exp-badge"><strong>19</strong><span>سنة</span></div>
+      </div>
+      <div class="about-text">
+        <span class="section-tag">عني</span>
+        <h2 class="section-title">أصنع تجارب رقمية <span>بشغف</span></h2>
+        <p>
+          أنا سالم وهيب سالم بامخرم من المدينة المنورة، خريج الثانوية العامة من دار الحديث (2025)، مهتم بتطوير الويب والتصميم الرقمي. أعمل على مواقع وتطبيقات واجهات وتجارب بصرية، وأواصل تطوير مهاراتي التقنية من خلال المشاريع العملية.
+        </p>
+        <ul class="about-list">
+          <li><i class="fa-solid fa-check"></i> بناء صفحات ويب متجاوبة ومنظمة</li>
+          <li><i class="fa-solid fa-check"></i> الاهتمام بتصميم الواجهات وتجربة المستخدم</li>
+          <li><i class="fa-solid fa-check"></i> إعداد تصاميم جرافيكية وهوية بصرية</li>
+        </ul>
+        <div class="about-info">
+          <div><span>الاسم:</span> سالم وهيب سالم بامخرم</div>
+          <div><span>الموقع:</span> المدينة المنورة</div>
+          <div><span>البريد:</span> saleemw2007@gmail.com</div>
+          <div><span>المجال:</span> تطوير الويب والتصميم الرقمي</div>
+        </div>
+        <a href="#contact" class="btn btn-primary">تواصل بخصوص مشروع تقني</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- السيرة الذاتية -->
+  <section id="cv" class="section bg-soft">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="section-tag">السيرة الذاتية</span>
+        <h2 class="section-title">معلوماتي ومؤهلاتي <span>العلمية والعملية</span></h2>
+      </div>
+
+      <div class="cv-grid">
+        <div class="cv-card">
+          <h3>👤 المعلومات الشخصية</h3>
+          <ul class="cv-list">
+            <li><strong>الاسم:</strong> سالم وهيب سالم بامخرم</li>
+            <li><strong>تاريخ الميلاد:</strong> 27/04/2007</li>
+            <li><strong>العمر:</strong> 19 سنة</li>
+            <li><strong>الجنسية:</strong> يمني</li>
+            <li><strong>رقم الجوال:</strong> 0508935672</li>
+            <li><strong>البريد الإلكتروني:</strong> <a href="mailto:saleemw2007@gmail.com" dir="ltr">saleemw2007@gmail.com</a></li>
+            <li><strong>المدينة:</strong> المدينة المنورة</li>
+          </ul>
+        </div>
+
+        <div class="cv-card">
+          <h3>🎯 الهدف المهني</h3>
+          <p>
+            أسعى إلى تطوير خبرتي في مجال التقنية من خلال العمل على مواقع الويب والواجهات الرقمية والتصميم الجرافيكي، والمساهمة في تنفيذ مشاريع عملية ذات تجربة استخدام واضحة.
+          </p>
+        </div>
+
+        <div class="cv-card">
+          <h3>💻 المشاريع التقنية</h3>
+          <div class="cv-item">
+            <h4>موقع لذة البروست</h4>
+            <p>موقع إلكتروني لمطعم، يعرض الهوية والمحتوى والصفحات التفاعلية.</p>
+            <a href="https://broastdelight.salembamakhram.workers.dev/" target="_blank" rel="noopener noreferrer">زيارة الموقع</a>
+          </div>
+          <div class="cv-item">
+            <h4>موقع السيرة الذاتية</h4>
+            <p>موقع شخصي لعرض المعلومات والمهارات والمشاريع بتصميم متجاوب.</p>
+            <a href="https://cvsalem.salembamakhram.workers.dev/" target="_blank" rel="noopener noreferrer">زيارة الموقع</a>
+          </div>
+        </div>
+
+        <div class="cv-card">
+          <h3>🎓 المؤهل العلمي</h3>
+          <ul class="cv-list">
+            <li><strong>المؤهل:</strong> الثانوية العامة</li>
+            <li><strong>المدرسة:</strong> دار الحديث</li>
+            <li><strong>سنة التخرج:</strong> 2025</li>
+          </ul>
+          <h3>🌐 اللغات</h3>
+          <ul class="cv-list">
+            <li><strong>العربية:</strong> ممتاز</li>
+            <li><strong>الإنجليزية:</strong> جيد</li>
+          </ul>
+        </div>
+        <div class="cv-card">
+          <h3>🧩 مجالات تقنية</h3>
+          <ul class="cv-list">
+            <li>تطوير صفحات ومواقع الويب.</li>
+            <li>تصميم واجهات المستخدم وتجربة الاستخدام.</li>
+            <li>التصميم الجرافيكي والشعارات والبطاقات.</li>
+            <li>التعلم المستمر ومتابعة التقنيات الحديثة.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:24px">
+        <a href="https://cvsalem.salembamakhram.workers.dev/" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> زيارة موقعي الشخصي</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- المهارات -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="section-tag">مهاراتي</span>
+        <h2 class="section-title">مهاراتي <span>في التقنية والتصميم</span></h2>
+        <p class="section-desc">تقنيات ومجالات أعمل على تطويرها من خلال المشاريع العملية.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-top"><i class="fa-brands fa-html5 html"></i><h3>HTML</h3></div>
+          <p>تنظيم محتوى صفحات الويب باستخدام عناصر واضحة ودلالية.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-top"><i class="fa-brands fa-css3-alt css"></i><h3>CSS</h3></div>
+          <p>تنسيق الصفحات وبناء واجهات تتكيف مع أحجام الشاشات.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-top"><i class="fa-brands fa-js js"></i><h3>JavaScript</h3></div>
+          <p>إضافة التفاعل والوظائف الديناميكية إلى صفحات الويب.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-top"><i class="fa-solid fa-mobile-screen mobile"></i><h3>التصميم المتجاوب</h3></div>
+          <p>مراعاة سهولة الاستخدام على الجوال والحاسوب.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-top"><i class="fa-solid fa-pen-ruler pen"></i><h3>تصميم الواجهات</h3></div>
+          <p>تنسيق الألوان والخطوط وترتيب العناصر لتحسين تجربة المستخدم.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-top"><i class="fa-solid fa-palette git"></i><h3>التصميم الجرافيكي</h3></div>
+          <p>إعداد الشعارات والبطاقات والإعلانات والتصاميم البصرية.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- الأعمال -->
+  <section id="projects" class="section bg-soft">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="section-tag">معرض أعمالي</span>
+        <h2 class="section-title">مشاريع <span>أفتخر بها</span></h2>
+        <p class="section-desc">مواقع إلكترونية وتصاميم واجهات وهوية بصرية.</p>
+      </div>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">الكل</button>
+        <button class="filter-btn" data-filter="web">مواقع</button>
+        <button class="filter-btn" data-filter="design">تصميم</button>
+        <button class="filter-btn" data-filter="logo">شعارات</button>
+        <button class="filter-btn" data-filter="card">بطائق وشهادات</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- موقع بروست دليت -->
+        <article class="project-card reveal external" data-cat="web">
+          <div class="project-img g1">
+            <img class="project-screenshot site-preview" src="broast-site-preview.png" alt="لقطة من الصفحة الرئيسية لموقع لذة البروست" loading="lazy">
+            <span class="cat">مواقع</span>
+          </div>
+          <div class="project-body">
+            <h3>موقع بروست دليت</h3>
+            <p>موقع تجاري احترافي للبروست والدجاج المشوي بتصميم مريح وتجربة استخدام سلسة.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <div class="project-links">
+              <a href="https://broastdelight.salembamakhram.workers.dev/" target="_blank" rel="noopener noreferrer">اذهب إلى موقع لذة البروست</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- موقع السيرة الذاتية -->
+        <article class="project-card reveal external" data-cat="web">
+          <div class="project-img g2">
+            <img class="project-screenshot site-preview" src="cv-site-preview.png" alt="لقطة من الصفحة الرئيسية لموقع السيرة الذاتية" loading="lazy">
+            <span class="cat">مواقع</span>
+          </div>
+          <div class="project-body">
+            <h3>موقع السيرة الذاتية</h3>
+            <p>موقع شخصي يعرض المعلومات والمهارات والأعمال بتصميم رقمي متجاوب.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <div class="project-links">
+              <a href="https://cvsalem.salembamakhram.workers.dev/" target="_blank" rel="noopener noreferrer">اذهب إلى السيرة الذاتية</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- شعار SLM -->
+        <article class="project-card reveal" data-cat="logo">
+          <div class="project-img g3">
+            <img class="project-screenshot is-logo" src="b10e79c1-a823-47a2-8256-6114a0bebb1f.webp" alt="شعار SLM باللون الذهبي" loading="lazy">
+            <span class="cat">شعارات</span>
+          </div>
+          <div class="project-body">
+            <h3>شعار SLM</h3>
+            <p>شعار شخصي بحروف SLM بلون ذهبي على خلفية سوداء.</p>
+            <div class="tags"><span>شعار</span><span>هوية شخصية</span></div>
+            <div class="project-links"><a href="b10e79c1-a823-47a2-8256-6114a0bebb1f.webp" target="_blank" rel="noopener noreferrer">عرض الشعار</a></div>
+          </div>
+        </article>
+
+        <!-- شعار راحل -->
+        <article class="project-card reveal" data-cat="logo">
+          <div class="project-img g4">
+            <img class="project-screenshot is-logo" src="2790d6b0-c3c2-48d3-b50f-88ad85103287.webp" alt="شعار راحل بخط عربي" loading="lazy">
+            <span class="cat">شعارات</span>
+          </div>
+          <div class="project-body">
+            <h3>شعار "راحل" خط عربي</h3>
+            <p>شعار عربي بتكوين خطي بسيط وواضح.</p>
+            <div class="tags"><span>شعار</span><span>خط عربي</span></div>
+            <div class="project-links"><a href="2790d6b0-c3c2-48d3-b50f-88ad85103287.webp" target="_blank" rel="noopener noreferrer">عرض التصميم <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+          </div>
+        </article>
+
+        <!-- شعار لذة البروست -->
+        <article class="project-card reveal" data-cat="logo">
+          <div class="project-img g5">
+            <img class="project-screenshot is-logo" src="lathat-broast-logo.png" alt="شعار لذة البروست بالدجاجة والكتابة الإنجليزية" loading="lazy">
+            <span class="cat">شعارات</span>
+          </div>
+          <div class="project-body">
+            <h3>شعار لذة البروست</h3>
+            <p>شعار مطعم لذة البروست برسمة دجاجة واسم العلامة التجارية.</p>
+            <div class="tags"><span>شعار</span><span>هوية بصرية</span></div>
+            <div class="project-links"><a href="lathat-broast-logo.png" target="_blank" rel="noopener noreferrer">عرض الشعار</a></div>
+          </div>
+        </article>
+
+        <!-- تصميم جرافيكي -->
+        <article class="project-card reveal" data-cat="design">
+          <div class="project-img g5">
+            <img class="project-screenshot" src="895ca76c-875e-4433-ab91-59afeeec9942.webp" alt="منشور خطواتك الأولى في التصميم الجرافيكي" loading="lazy">
+            <span class="cat">تصميم</span>
+          </div>
+          <div class="project-body">
+            <h3>منشور عن التصميم الجرافيكي</h3>
+            <p>تصميم بصري تعريفي ببدايات التصميم الجرافيكي.</p>
+            <div class="tags"><span>تصميم جرافيكي</span><span>Canva</span></div>
+            <div class="project-links"><a href="895ca76c-875e-4433-ab91-59afeeec9942.webp" target="_blank" rel="noopener noreferrer">عرض التصميم <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+          </div>
+        </article>
+
+        <!-- تصميم دعوة ختمة قرآنية -->
+        <article class="project-card reveal" data-cat="design">
+          <div class="project-img g6">
+            <img class="project-screenshot" src="quran-khatmah-invitation.png" alt="تصميم دعوة ختمة قرآنية في المسجد النبوي" loading="lazy">
+            <span class="cat">تصميم</span>
+          </div>
+          <div class="project-body">
+            <h3>تصميم دعوة ختمة قرآنية</h3>
+            <p>تصميم دعوة عربية لمناسبة ختمة قرآنية في المسجد النبوي.</p>
+            <div class="tags"><span>تصميم جرافيكي</span><span>دعوة</span></div>
+            <div class="project-links"><a href="quran-khatmah-invitation.png" target="_blank" rel="noopener noreferrer">عرض التصميم</a></div>
+          </div>
+        </article>
+
+        <!-- إعلان ورشة -->
+        <article class="project-card reveal" data-cat="design">
+          <div class="project-img g6">
+            <img class="project-screenshot" src="download.webp" alt="تصميم إعلان ورشة مجانية" loading="lazy">
+            <span class="cat">تصميم</span>
+          </div>
+          <div class="project-body">
+            <h3>إعلان ورشة مجانية</h3>
+            <p>تصميم إعلاني عربي للتعريف بورشة تدريبية.</p>
+            <div class="tags"><span>إعلان</span><span>تصميم جرافيكي</span></div>
+            <div class="project-links"><a href="download.webp" target="_blank" rel="noopener noreferrer">عرض التصميم</a></div>
+          </div>
+        </article>
+
+        <!-- بطاقة التقييم -->
+        <article class="project-card reveal" data-cat="card">
+          <div class="project-img g1">
+            <img class="project-screenshot" src="c750d1b6-c0eb-4f9e-a4f2-6d27b479959c.webp" alt="بطاقة طلب التقييم على جوجل" loading="lazy">
+            <span class="cat">بطائق</span>
+          </div>
+          <div class="project-body">
+            <h3>دعوة للتقييم على جوجل</h3>
+            <p>بطاقة تدعو العملاء لمشاركة تقييمهم عبر خرائط Google.</p>
+            <div class="tags"><span>بطاقة</span><span>تصميم</span></div>
+            <div class="project-links"><a href="c750d1b6-c0eb-4f9e-a4f2-6d27b479959c.webp" target="_blank" rel="noopener noreferrer">عرض التصميم</a></div>
+          </div>
+        </article>
+
+        <!-- دعوة ختمة قرآنية -->
+        <article class="project-card reveal" data-cat="card">
+          <div class="project-img g2">
+            <img class="project-screenshot" src="e8c9674f-ec3f-4c52-89fb-95b741e833a5.webp" alt="تصميم دعوة ختمة قرآنية" loading="lazy">
+            <span class="cat">بطاقات</span>
+          </div>
+          <div class="project-body">
+            <h3>بطاقة مناسبة</h3>
+            <p>تصميم بطاقة عربية بتنسيق بصري متوازن.</p>
+            <div class="tags"><span>بطاقة</span><span>تصميم جرافيكي</span></div>
+            <div class="project-links"><a href="e8c9674f-ec3f-4c52-89fb-95b741e833a5.webp" target="_blank" rel="noopener noreferrer">عرض التصميم <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- الخدمات التقنية -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="section-tag">مجالاتي التقنية</span>
+        <h2 class="section-title">ماذا أقدم في <span>التقنية والتصميم؟</span></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="s-icon"><img src="icon-team.svg" alt=""></div>
+          <h3>تطوير مواقع الويب</h3>
+          <p>إنشاء صفحات ويب منظمة وتفاعلية باستخدام تقنيات الويب.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="s-icon"><img src="icon-support.svg" alt=""></div>
+          <h3>تصميم واجهات المستخدم</h3>
+          <p>تنسيق واجهات واضحة وسهلة الاستخدام للمواقع والتطبيقات.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="s-icon"><img src="icon-meals.svg" alt=""></div>
+          <h3>تصميم جرافيكي</h3>
+          <p>إعداد الشعارات والبطاقات والإعلانات والتصاميم الرقمية.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="s-icon"><img src="icon-safety.svg" alt=""></div>
+          <h3>تحسين تجربة المستخدم</h3>
+          <p>تنظيم المحتوى وتوضيح مسارات التصفح لمختلف الشاشات.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- الصور المرجعية -->
+  <section id="gallery" class="section bg-soft">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="section-tag">معرض الصور</span>
+        <h2 class="section-title">صور من <span>أعمالي ومواقعي</span></h2>
+        <p class="section-desc">لقطات حقيقية من مواقعي، مع الشعارات والتصاميم التي أعددتها.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <a class="gallery-item" href="2790d6b0-c3c2-48d3-b50f-88ad85103287.webp" target="_blank" rel="noopener noreferrer" aria-label="عرض شعار راحل بالحجم الكامل">
+          <img src="2790d6b0-c3c2-48d3-b50f-88ad85103287.webp" alt="شعار راحل بخط عربي" loading="lazy">
+          <span class="gallery-caption">شعار راحل — خط عربي</span>
+          <span class="cat">شعار</span>
+        </a>
+        <a class="gallery-item" href="b10e79c1-a823-47a2-8256-6114a0bebb1f.webp" target="_blank" rel="noopener noreferrer" aria-label="عرض شعار SLM بالحجم الكامل">
+          <img src="b10e79c1-a823-47a2-8256-6114a0bebb1f.webp" alt="شعار SLM" loading="lazy">
+          <span class="gallery-caption">شعار SLM — هوية شخصية</span>
+          <span class="cat">شعار</span>
+        </a>
+        <a class="gallery-item" href="lathat-broast-logo.png" target="_blank" rel="noopener noreferrer" aria-label="عرض شعار لذة البروست بالحجم الكامل">
+          <img src="lathat-broast-logo.png" alt="شعار لذة البروست" loading="lazy">
+          <span class="gallery-caption">شعار لذة البروست</span>
+          <span class="cat">شعار</span>
+        </a>
+        <a class="gallery-item" href="broast-site-preview.png" target="_blank" rel="noopener noreferrer" aria-label="عرض صورة الصفحة الرئيسية لموقع لذة البروست">
+          <img src="broast-site-preview.png" alt="الصفحة الرئيسية لموقع لذة البروست" loading="lazy">
+          <span class="gallery-caption">موقع لذة البروست</span>
+          <span class="cat">موقع</span>
+        </a>
+        <a class="gallery-item" href="cv-site-preview.png" target="_blank" rel="noopener noreferrer" aria-label="عرض صورة الصفحة الرئيسية لموقع السيرة الذاتية">
+          <img src="cv-site-preview.png" alt="الصفحة الرئيسية لموقع السيرة الذاتية" loading="lazy">
+          <span class="gallery-caption">موقع السيرة الذاتية</span>
+          <span class="cat">موقع</span>
+        </a>
+        <a class="gallery-item" href="895ca76c-875e-4433-ab91-59afeeec9942.webp" target="_blank" rel="noopener noreferrer" aria-label="عرض تصميم خطواتك الأولى في التصميم">
+          <img src="895ca76c-875e-4433-ab91-59afeeec9942.webp" alt="منشور خطواتك الأولى في التصميم الجرافيكي" loading="lazy">
+          <span class="gallery-caption">منشور عن التصميم الجرافيكي</span>
+          <span class="cat">تصميم</span>
+        </a>
+        <a class="gallery-item" href="8058bf9f-458b-4270-a796-a8b15de1786c.webp" target="_blank" rel="noopener noreferrer" aria-label="عرض تصميم دجاج بروست لذة البروست">
+          <img src="8058bf9f-458b-4270-a796-a8b15de1786c.webp" alt="تصميم دجاج بروست لذة البروست" loading="lazy">
+          <span class="gallery-caption">تصميم دجاج بروست</span>
+          <span class="cat">تصميم</span>
+        </a>
+        <a class="gallery-item" href="c750d1b6-c0eb-4f9e-a4f2-6d27b479959c.webp" target="_blank" rel="noopener noreferrer" aria-label="عرض بطاقة التقييم على جوجل">
+          <img src="c750d1b6-c0eb-4f9e-a4f2-6d27b479959c.webp" alt="بطاقة التقييم على جوجل" loading="lazy">
+          <span class="gallery-caption">بطاقة تقييم Google</span>
+          <span class="cat">بطاقة</span>
+        </a>
+        <a class="gallery-item" href="download.webp" target="_blank" rel="noopener noreferrer" aria-label="عرض إعلان الورشة المجانية">
+          <img src="download.webp" alt="إعلان ورشة مجانية" loading="lazy">
+          <span class="gallery-caption">إعلان ورشة مجانية</span>
+          <span class="cat">إعلان</span>
+        </a>
+        <a class="gallery-item" href="quran-khatmah-invitation.png" target="_blank" rel="noopener noreferrer" aria-label="عرض تصميم دعوة ختمة قرآنية">
+          <img src="quran-khatmah-invitation.png" alt="تصميم دعوة ختمة قرآنية في المسجد النبوي" loading="lazy">
+          <span class="gallery-caption">دعوة ختمة قرآنية</span>
+          <span class="cat">تصميم</span>
+        </a>
+        <a class="gallery-item" href="e8c9674f-ec3f-4c52-89fb-95b741e833a5.webp" target="_blank" rel="noopener noreferrer" aria-label="عرض تصميم بطاقة عربية">
+          <img src="e8c9674f-ec3f-4c52-89fb-95b741e833a5.webp" alt="تصميم بطاقة عربية بخلفية تصويرية" loading="lazy">
+          <span class="gallery-caption">تصميم بطاقة عربية</span>
+          <span class="cat">بطاقة</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- التواصل -->
+  <section id="contact" class="section bg-soft">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <span class="section-tag">تواصل معي</span>
+        <h2 class="section-title">لديك مشروع تقني؟ <span>يسعدني التواصل</span></h2>
+        <p>للتواصل حول تطوير موقع أو تصميم واجهة أو مشروع جرافيكي، أرسل رسالتك أو تواصل معي مباشرة.</p>
+
+        <div class="info-item"><i class="fa-solid fa-envelope"></i><div><strong>البريد الإلكتروني</strong><span dir="ltr">saleemw2007@gmail.com</span></div></div>
+        <div class="info-item"><i class="fa-brands fa-whatsapp"></i><div><strong>واتساب / الهاتف</strong><span dir="ltr">0508935672</span></div></div>
+        <div class="info-item"><i class="fa-solid fa-location-dot"></i><div><strong>الموقع</strong><span>المدينة المنورة</span></div></div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="row">
+          <div class="field"><label>الاسم</label><input type="text" id="name" placeholder="اكتب اسمك" required /></div>
+          <div class="field"><label>البريد الإلكتروني</label><input type="email" id="email" placeholder="name@mail.com" required /></div>
+        </div>
+        <div class="field"><label>عنوان الرسالة</label><input type="text" id="subject" placeholder="مثال: تطوير موقع إلكتروني" /></div>
+        <div class="field"><label>تفاصيل المشروع</label><textarea id="message" rows="5" placeholder="اكتب تفاصيل المشروع أو التصميم..." required></textarea></div>
+        <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-paper-plane"></i> إرسال الرسالة</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> سالم وهيب سالم بامخرم — جميع الحقوق محفوظة.</p>
+      <p class="made">سالم وهيب سالم بامخرم — تطوير مواقع وتصميم رقمي</p>
+      <button id="topBtn" class="icon-btn" title="العودة للأعلى"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
