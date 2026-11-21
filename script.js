@@ -3,6 +3,12 @@
 // 1) السنة الحالية في الفوتر
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// التأكد من ظهور صور المعرض، مع معالجة واضحة لأي صورة لا يمكن تحميلها
+document.querySelectorAll('.gallery-item img, .project-screenshot').forEach(img => {
+  img.addEventListener('error', () => img.classList.add('image-error'));
+  if (img.complete && img.naturalWidth === 0) img.classList.add('image-error');
+});
+
 // 2) الوضع الليلي / النهاري مع الحفظ
 const themeBtn = document.getElementById('themeBtn');
 const themeIcon = themeBtn.querySelector('i');
@@ -22,10 +28,21 @@ themeBtn.addEventListener('click', () => {
 // 3) قائمة الجوال
 const menuBtn = document.getElementById('menuBtn');
 const navLinks = document.getElementById('navLinks');
-menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
-navLinks.querySelectorAll('a').forEach(a =>
-  a.addEventListener('click', () => navLinks.classList.remove('open'))
-);
+function setMenu(open) {
+  navLinks.classList.toggle('open', open);
+  document.body.classList.toggle('menu-open', open);
+  menuBtn.setAttribute('aria-expanded', String(open));
+  menuBtn.setAttribute('aria-label', open ? 'إغلاق القائمة' : 'فتح القائمة');
+  menuBtn.querySelector('i').className = open ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+}
+menuBtn.addEventListener('click', () => setMenu(!navLinks.classList.contains('open')));
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') setMenu(false);
+});
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 960) setMenu(false);
+});
 
 // 4) تظليل الرابط النشط عند التمرير
 const sections = document.querySelectorAll('section[id]');

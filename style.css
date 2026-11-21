@@ -302,7 +302,7 @@ textarea{resize:vertical}
 .cv-item{margin-bottom:16px}
 .cv-item h4{font-size:1.05rem;margin-bottom:6px;color:var(--text)}
 
-/placeholders للصور والمشاريع*/
+/* placeholders للصور والمشاريع */
 .project-img{
   height:190px;
   display:grid;
@@ -316,11 +316,13 @@ textarea{resize:vertical}
 .project-screenshot{
   width:100%;
   height:100%;
-  object-fit:cover;
+  object-fit:contain;
   display:block;
+  image-rendering:-webkit-optimize-contrast;
+  background:var(--card);
 }
-.project-screenshot.is-logo{object-fit:contain;padding:16px;background:var(--card)}
-.project-screenshot.site-preview{object-position:center 38%}
+.project-screenshot.is-logo{object-fit:contain;padding:12px;background:var(--card)}
+.project-screenshot.site-preview{object-fit:cover;object-position:center 38%}
 .project-fallback{
   display:none;
   width:100%;
@@ -335,7 +337,7 @@ textarea{resize:vertical}
   font-size:.78rem;font-weight:800;padding:4px 14px;border-radius:99px;
 }
 
-/شعارات مصغرة مصنوعة بـ CSS*/
+/* شعارات مصغرة مصنوعة بـ CSS */
 .logo-placeholder{
   width:90px;height:90px;border-radius:20px;display:grid;place-items:center;
   font-size:2rem;font-weight:900;color:#fff;
@@ -343,7 +345,7 @@ textarea{resize:vertical}
   box-shadow:0 4px 12px rgba(0,0,0,.15);
 }
 
-/بطاقة الملف الشخصي المحدثة*/
+/* بطاقة الملف الشخصي المحدثة */
 .profile-img-wrapper{
   position:relative;width:140px;height:140px;margin:0 auto 14px;
 }
@@ -360,13 +362,13 @@ textarea{resize:vertical}
   box-shadow:var(--shadow);
 }
 
-/نص مركزي*/
+/* نص مركزي */
 .text-center{text-align:center}
 
-/أيقونة الواتساب في المعلومات*/
+/* أيقونة الواتساب في المعلومات */
 .info-item i.fa-whatsapp{color:#25d366;}
 
-/قسم الصور المرجعية*/
+/* قسم الصور المرجعية */
 .gallery-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -386,8 +388,23 @@ textarea{resize:vertical}
 .gallery-item img{
   width:100%;
   height:200px;
-  object-fit:cover;
+  object-fit:contain;
   display:block;
+  image-rendering:-webkit-optimize-contrast;
+  background:var(--card);
+  padding:8px;
+}
+.gallery-item img.image-error{
+  display:none;
+}
+.gallery-item:has(img.image-error)::before{
+  content:'تعذّر عرض الصورة';
+  display:grid;
+  place-items:center;
+  height:200px;
+  background:var(--bg-soft);
+  color:var(--muted);
+  font-weight:700;
 }
 .gallery-caption{
   display:block;
@@ -409,7 +426,7 @@ textarea{resize:vertical}
   font-size:.78rem;font-weight:800;padding:4px 14px;border-radius:99px;
 }
 
-/تجاوب محدث*/
+/* تجاوب محدث */
 @media(max-width:960px){
   .hero{grid-template-columns:1fr;text-align:center}
   .subtitle{margin-inline:auto}
@@ -417,15 +434,77 @@ textarea{resize:vertical}
   .about-grid,.contact-grid{grid-template-columns:1fr}
   .skills-grid,.projects-grid,.services-grid,.cv-grid{grid-template-columns:1fr 1fr}
   .nav-links{
-    position:fixed;top:0;right:-100%;width:min(300px,80%);height:100vh;z-index:99;
+    position:fixed;top:0;right:-100%;width:min(300px,82vw);height:100dvh;z-index:99;
     background:var(--card);flex-direction:column;padding:80px 30px;gap:18px;
     border-left:1px solid var(--line);transition:.35s;box-shadow:var(--shadow-lg);
+    overflow-y:auto;
   }
   .nav-links.open{right:0}
   .menu-btn{display:grid}
   .f1{left:10px}.f2{right:10px}
 }
 @media(max-width:600px){
+  .container{width:calc(100% - 32px)}
+  .topbar{font-size:.78rem;padding:6px 8px}
+  .nav{padding:9px 0}
+  .logo{font-size:1.12rem}
+  .nav-actions{gap:6px}
+  .nav-actions .btn-sm{display:none}
+  .icon-btn{width:40px;height:40px;border-radius:10px}
+  .hero{padding:38px 0 48px;gap:34px}
+  .hero h1{font-size:clamp(1.65rem,8vw,2.25rem);line-height:1.45;margin:14px 0}
+  .subtitle{font-size:.98rem;line-height:1.9}
+  .hero-btns{display:grid;grid-template-columns:1fr;gap:10px;width:100%;margin:20px 0}
+  .hero-btns .btn{width:100%;padding:12px 16px}
+  .hero-stats{gap:8px;width:100%;justify-content:space-between;margin:8px 0 14px}
+  .hero-stats div{flex:1;min-width:0}
+  .hero-stats strong{font-size:1.28rem}
+  .hero-stats span{font-size:.72rem;line-height:1.5}
+  .profile-card{padding:24px 18px;border-radius:20px}
+  .profile-img-wrapper{width:120px;height:120px}
+  .float-card{display:none}
+  .section{padding:54px 0}
+  .section-head{margin-bottom:30px}
+  .section-title{font-size:1.55rem}
+  .section-desc{font-size:.92rem}
+  .about-grid,.contact-grid{gap:28px}
+  .about-img{min-height:280px}
+  .about-info{padding:14px}
+  .about-info div{min-width:0;overflow-wrap:anywhere}
+  .filters{gap:7px;margin-bottom:24px}
+  .filter-btn{padding:8px 12px;font-size:.82rem}
+  .project-img{height:280px}
+  .project-screenshot.site-preview{object-fit:contain;object-position:center}
+  .project-body{padding:18px}
+  .gallery-grid{grid-template-columns:1fr}
+  .gallery-item img,.gallery-fallback{height:240px}
+  .gallery-item:has(img.image-error)::before{height:240px}
+  .service-card{padding:28px 20px}
+  .row{gap:10px}
+  .contact-form{padding:18px 14px}
+  .field input,.field textarea{font-size:16px;padding:12px 14px}
+  .footer-inner{justify-content:center;text-align:center;font-size:.85rem}
+  .footer-inner p{width:100%}
   .skills-grid,.projects-grid,.services-grid,.row,.cv-grid,.about-info{grid-template-columns:1fr}
-  .section{padding:64px 0}
 }
+
+@media(max-width:380px){
+  .container{width:calc(100% - 24px)}
+  .topbar{font-size:.72rem}
+  .logo{font-size:1rem}
+  .hero h1{font-size:1.55rem}
+  .hero-stats strong{font-size:1.12rem}
+  .hero-stats span{font-size:.68rem}
+  .profile-img-wrapper{width:108px;height:108px}
+  .section-title{font-size:1.38rem}
+}
+
+#topBtn{
+  position:fixed;
+  bottom:18px;
+  left:18px;
+  z-index:70;
+  box-shadow:var(--shadow-lg);
+}
+
+body.menu-open{overflow:hidden}
